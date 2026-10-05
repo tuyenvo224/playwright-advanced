@@ -1,0 +1,35 @@
+1. Nâng version playwright bằng cách sửa trực tiếp file như sau:
+
+rong file package.json -> "@playwright/test": "^1.63.0"
+
+Nếu sửa playwright sang version khác, vd version lớn hơn: 1.65.0
+-> dùng lệnh: npx playwright --version
+
+thì sau đó cần chạy lại các lệnh:
+- npm install --> để cài đặt lại tất các thư viện
+- npx playwright install --> để cài đặt các trình duyệt playwright tương ứng với version của playwright
+
+2. Nâng version playwright bằng câu lệnh
+- npm install -D @playwright/test@latest
+
+3. Để cài đặt 1 trình duyệt playwright cụ thể thì dùng lệnh sau:
+- npx playwright install chromium firefox webkit --> có thể 1 hoặc nhiều
+
+npx playwright test --list
+
+npm install -D dotenv
+
+ENV=staging CLASS=pwa103 npx playwright test
+
+ENV=production npx playwright test tests/lesson-01/06-env-management-utils.spec.ts // ko mở trình duyệt
+
+ENV=production npx playwright test tests/lesson-01/06-env-management-utils.spec.ts --headed // có mở trình duyệt
+
+
+npm install                     → Cài đặt thư viện đang có trong file package.json
+npm install <ten_thu_vien>
+
+npx <> <>   // x: execute
+ - npx ts-node <file>
+ - npx tsx <file>
+ - npx playwright test .......
