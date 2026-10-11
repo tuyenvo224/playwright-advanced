@@ -5,12 +5,12 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "types": ["node"],
-    "baseUrl": ".",
+    //"baseUrl": ".",
     "paths": {
-      "@data/*": ["src/data/*"],
-      "@pages/*": ["src/pages/*"],
-      "@fixtures/*": ["src/fixtures/*"],
-      "@utils/*": ["src/utils/*"]
+      "@data/*": ["./src/data/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@fixtures/*": ["./src/fixtures/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   }
 }
